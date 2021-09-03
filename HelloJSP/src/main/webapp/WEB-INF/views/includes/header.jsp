@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import = "com.example.emaillist.vo.UserVo" %>
 <%
 String message = request.getParameter("message");
 //세션 확인
@@ -30,7 +31,7 @@ UserVo authUser= (UserVo)session.getAttribute("authUser");
     %>
     <ul>
 	    <li><%=authUser.getName() %>님 안녕하세요!</li>
-	    <li><a href="<% request.getContextPath() %>/users?a=logout">로그아웃</a>
+	    <li><a href="<%= request.getContextPath() %>/user?a=Logoutform">로그아웃</a>
 	 </ul>
 	 <% 
 	}

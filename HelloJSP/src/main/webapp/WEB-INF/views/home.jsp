@@ -6,6 +6,11 @@
 <jsp:include page="/WEB-INF/views/includes/header.jsp">
 	<jsp:param value="메인 페이지" name="message"/>
 </jsp:include>
+<head>
+<!--  부트 스트랩 사용 -->
+<link rel="stylesheet" href="/resource/css/bootstrap.css">
+
+</head>
 	
 	
 	<h4>GET 전송</h4>

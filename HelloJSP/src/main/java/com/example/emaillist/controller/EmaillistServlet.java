@@ -34,7 +34,7 @@ public class EmaillistServlet extends HttpServlet {
 			EmaillistDao dao = new EmaillistDaoImpl();
 			List<EmailVo> list = dao.getList();
 
-			// 요청에 list를 추가
+		// 요청에 list를 추가
 			// list 객체를 list 키로 추가
 			req.setAttribute("list", list);
 			// JSP로 요청을 전달(FORWARD)
